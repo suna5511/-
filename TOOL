@@ -1,0 +1,10 @@
+链接：https://www.liaoxuefeng.com/wiki/896043488029600/896067008724000
+安装网址：https://git-scm.com/downloads
+一.创建版本库
+ $ mkdir learngit 创建目录
+ $ cd learngit
+ $ git init 初始化仓库
+ $ git add readme.txt 添加文件
+ $ git commit -m "wrote a readme file"  提交文件
+ 
+ 
