@@ -49,7 +49,28 @@
    $ git stash pop  恢复的同时把stash内容也删了， git stash apply恢复，但是恢复后，stash内容并不删除
    $ git cherry-pick 4c805e2 复制一个特定的提交到当前分支。Git自动给dev分支做了一次提交，注意这次提交的commit是1d4b803，它并不同于master的4c805e2，因为这两个commit只是改动相同，但确实是两个不同的commit。用git cherry-pick，我们就不需要在dev分支上手动再把修bug的过程重复一遍
    $ git branch -D feature-vulcan  这个时feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用大写的-D参数。
-12. 多人协作
+七.多人协作
+   $ git remote  查看远程库的信息
+   $ git remote -v  显示更详细的信息
+   $ git push origin master  推送分支
+   $ git checkout -b dev origin/dev  当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支，现在，你的小伙伴要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支
+   $ git pull
+   $ git branch --set-upstream-to=origin/dev dev  在pull之前指定本地dev分支与远程origin/dev分支的链接
+八. 标签
+   $ git tag v1.0  打标签，默认标签是打在最新提交的commit上的
+   $ git tag  查看所有标签
+   $ git log --pretty=oneline --abbrev-commit  找到历史提交的commit id
+   $ git tag v0.9 f52c633 ，然后打上
+   $ git show v0.9  查看标签信息
+   $ git tag -a v0.1 -m "version 0.1 released" 1094adb  用-a指定标签名，-m指定说明文字
+   $ git tag -d v0.1 删除标签
+   $ git push origin v1.0  推送某个标签到远程
+   $ git push origin --tags  一次性推送全部尚未推送到远程的本地标签
+   $ git tag -d v0.9  然后  $ git push origin :refs/tags/v0.9  如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除，然后，从远程删除。删除命令也是push
+   
+   
+   
+
    
 
 
