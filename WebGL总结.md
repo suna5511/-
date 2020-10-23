@@ -30,6 +30,7 @@
      
 2. OpenGL和WebGL
  OpenGL: 
+  ![image](https://raw.githubusercontent.com/suna5511/-/main/1.png)
     是一个关于图形的API的详述定义（specification）[1]，规定了很多函数和其参数返回型，以及要实现的行为和管线操作。具体的实现由硬件厂商完成。所以你可以用同样的
   openGL代码在不同的显卡上跑。（而在不同的操作系统上，在IO层面需要不同的driver，所以你在windows上的和在Mac，linux上的操作系统层面的代码不跨平台。）所以OpenGL由于属于比较High Level，
   效率提不上去也是一个问题。之前shader大战，openGL后知后觉的ARB（Architecture Review board）基本上把openGL自断一臂，输给了directX (windows) [2]苹果也觉得自己慢啊，这也就是为什么
