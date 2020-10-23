@@ -46,6 +46,8 @@
         看WebGL的背景实际上是JavaScript操作一些OpenGL接口，也就意味着，可能会编写一部分GLSL ES 2.0的代码，没错，你猜对了，WebGL只是绑定了一层，内部的一些核心内容，如着色器，材质，灯光
         等都是需要借助GLSL ES语法来操作的。基于WebGL周边也衍生了众多的第三方库，如开发应用类的Three.js，开发游戏类的Egert.js等，都大大的降低了学习WebGL的成本。
         https://webglreport.com/?v=2  该网站查看自己浏览器是否兼容
+        （1）创建WebGL对象  （2）着色器
+
 
       
 
