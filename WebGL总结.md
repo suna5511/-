@@ -30,7 +30,7 @@
      
 2. OpenGL和WebGL
  OpenGL: 
-  ![image](https://raw.githubusercontent.com/suna5511/-/main/1.png)
+  ![image](https://raw.githubusercontent.com/suna5511/-/main/images/1.png)
     注意：WebGL 1.0 基于OpenGL ES 2.0（OpenGL ES是针对移动设备的OpenGL）。(因为OpenGL2.0之前没有着色器。从2.0之后开始才支持了这个非常重要的特性，“可编程着色器方法”。有没有颜色还是很重要的)
     OpenGL是一个关于图形的API的详述定义（specification）[1]，规定了很多函数和其参数返回型，以及要实现的行为和管线操作。具体的实现由硬件厂商完成。所以你可以用同样的
   openGL代码在不同的显卡上跑。（而在不同的操作系统上，在IO层面需要不同的driver，所以你在windows上的和在Mac，linux上的操作系统层面的代码不跨平台。）所以OpenGL由于属于比较High Level，
