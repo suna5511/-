@@ -36,6 +36,17 @@
     就可以写出一个光栅化的程序。为了加速这个程序你写了很多tricks以及软硬件加速。把这个系统的总结总结，大家都按这个来。后来觉得，嗯，有些操作可以并行，有些操作可以硬件提速，
     搞点vertex buffer或者更多的寄存器，后来中心都移到了显卡。后来有移动端了，又搞一个基于移动端的轻便版本的openGL ES.不断不断细分，演化，进步。
     WebGL:
+      a. 
+        WebGL 使得在支持HTML 的 canvas 标签的浏览器中，不需要安装任何插件，便可以使用基于 OpenGL ES 2.0 的 API 在 canvas 中进行2D和3D渲染。WebGL程序包括用 JavaScript 写的控制代码，
+      以及在图形处理单元（GPU, Graphics Processing Unit）中执行的着色代码（GLSL，注：GLSL为OpenGL着色语言）。WebGL 元素可以和其他 HTML 元素混合使用，并且可以和网页其他部分或者网页
+      背景结合起来。WebGL技术标准免去了开发网页专用渲染插件的麻烦，可被用于创建具有复杂3D结构的网站页面，甚至可以用来设计3D网页游戏等等。
+      看WebGL的背景实际上是JavaScript操作一些OpenGL接口，也就意味着，可能会编写一部分GLSL ES 2.0的代码，没错，你猜对了，WebGL只是绑定了一层，内部的一些核心内容，如着色器，材质，灯光等都是需要借助GLSL ES语法来操作的.
+
+      b.
+        看WebGL的背景实际上是JavaScript操作一些OpenGL接口，也就意味着，可能会编写一部分GLSL ES 2.0的代码，没错，你猜对了，WebGL只是绑定了一层，内部的一些核心内容，如着色器，材质，灯光
+        等都是需要借助GLSL ES语法来操作的。基于WebGL周边也衍生了众多的第三方库，如开发应用类的Three.js，开发游戏类的Egert.js等，都大大的降低了学习WebGL的成本。
+        https://webglreport.com/?v=2  该网站查看自己浏览器是否兼容
+
       
 
 
